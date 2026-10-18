@@ -22,9 +22,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z) || Input.GetMouseButtonDown(0)){
         StartCoroutine(AttackRoutine());
-        if(AudioManager.Instance != null ){
-    AudioManager.Instance.ReproducirSfx(AudioManager.Instance.sonidoGolpe);
-}
+        
         }
     }
 
@@ -69,11 +67,7 @@ public class PlayerAttack : MonoBehaviour
              enemyHealth.TakeDamage(attackDamage);
         }
 
-        BossController boss = enemy.GetComponent<BossController>();
-    if (boss != null)
-    {
-        boss.TakeDamage(attackDamage);
-    }
+        
     }
 } 
 

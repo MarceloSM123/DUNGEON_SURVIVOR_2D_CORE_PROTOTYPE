@@ -15,9 +15,7 @@ public class Coin : MonoBehaviour
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.AddCoin(coinValue);
-                if(AudioManager.Instance != null ){
-    AudioManager.Instance.ReproducirSfx(AudioManager.Instance.sonidoMoneda);
-}
+               
             }
 
             // Destruimos la moneda

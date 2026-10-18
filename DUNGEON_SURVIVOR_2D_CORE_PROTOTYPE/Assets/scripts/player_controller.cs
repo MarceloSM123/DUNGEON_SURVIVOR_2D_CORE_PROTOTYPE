@@ -65,9 +65,7 @@ public GameObject polvoSaltoPrefabs;
             animator.SetBool("isJump", true);
             if(polvoSaltoPrefabs != null){
     Instantiate(polvoSaltoPrefabs, transform.position, Quaternion.identity);
-    if(AudioManager.Instance != null ){
-    AudioManager.Instance.ReproducirSfx(AudioManager.Instance.sonidoSalto);
-}
+    
 }
         }
 
